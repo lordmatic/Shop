@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&family=Roboto+Slab:wght@100&display=swap');
+body{
+     font-family: Georgia, 'Times New Roman', Times, serif ;
+     padding: 0px;
+     margin: 0px;
+}
+nav{
+    background-color: rgba(108, 52, 52, 0.592);
+    color: white;
+    padding: 20px 50px;
+}
+.navTop{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.search{
+   display: flex; 
+   align-items: center;
+   background-color: rgba(94, 87, 79, 0.535);
+   padding: 10px 20px;
+   border-radius: 10px;
+   
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: lightgrey;
+}
+.buyNow {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.navBottom{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.menuItem{
+   margin-right:50px ; 
+   cursor: pointer;
+   font-weight: 200;
+   border-bottom: 2px solid green;
+}
+
+.slider {
+    background:url(https://wallpaperaccess.com/full/1567677.jpg);
+    /*clip-path: polygon(0 1%, 100% 0%, 74% 92%, 0 81%);*/
+}
+.sliderWrapper{
+display: flex;
+width: 500vw;
+transition: all 1.5s ease-in-out;
+}
+
+.sliderItem{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 90;
+    text-align: center;
+    color: white;
+    border: 1px solid green;
+    z-index: 1;
+    
+  
+}
+.sliderBg{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    /*background-color: rgb(132, 129, 134);*/
+}
+
+.sliderImg {
+    z-index: 1;
+  }
+
+  .buyButton  {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    border: 1px solid green;
+    background-color: rgb(24, 13, 13);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+.buyButton:hover{
+background-color: aliceblue;
+ color: black;
+}
+.sliderItem:nth-child(1) .sliderBg{
+    background-color: rgb(173, 173, 158);
+}
+
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: rgb(41, 41, 36);
+}
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: rgba(159, 159, 109, 0.43);
+}
+
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: rgb(173, 173, 158);
+}
+.sliderItem:nth-child(5) .sliderBg{
+    background-color: rgb(161, 158, 173);
+}
+
+.sliderItem:nth-child(6) .sliderBg{
+    background-color: rgb(67, 235, 61);
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    background-color: rgb(137, 137, 102);
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+    background-color: rgb(153, 147, 185);
+}
+.sliderItem:nth-child(3) .sliderPrice{
+    background-color: rgba(159, 159, 109, 0.43);
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    background-color: rgb(126, 151, 156);
+}
+.sliderItem:nth-child(5) .sliderPrice{
+    background-color: rgb(97, 60, 122);
+}
+
+.sliderItem:nth-child(6) .sliderPrice{
+    background-color: rgb(183, 122, 76);
+}
+
+/* https://www.youtube.com/watch?v=b3Gqq_k-g24  18:17 */
